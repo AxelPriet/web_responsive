@@ -1,0 +1,16 @@
+@use "scss/variables" as *;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: $transparente;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#page{
+  width: 100vw;
+  height: 100vh;
+  
+}

@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.modal{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100vw;
+    height: 350px;
+    border-top: 1px solid #000000;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin-inline: 24px;
+        margin-block: 32px;
+    }
+}
+
+@media (min-width: 375px){
+    .modal{
+        width: 350px;
+        left: calc(50vw - 175px);
+        top: calc(50vh - 175px);
+        border: 1px solid #000000;
+        border-radius: 16px;
+
+    }
+}

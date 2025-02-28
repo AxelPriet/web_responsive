@@ -1,0 +1,72 @@
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/app.scss ***!
+  \*******************************************************************************************************/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#page {
+  width: 100vw;
+  height: 100vh;
+}
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_botones.scss ***!
+  \*****************************************************************************************************************/
+.btn {
+  width: calc(100vw - 32px);
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: #ffffff;
+  border: 0px;
+  margin: 16px;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: blue;
+  border: 1px solid blue;
+}
+
+@media (min-width: 376px) {
+  .btn {
+    width: 250px;
+  }
+}
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_modales.scss ***!
+  \*****************************************************************************************************************/
+.modal {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 350px;
+  border-top: 1px solid #000000;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal p {
+  margin-inline: 24px;
+  margin-block: 32px;
+}
+
+@media (min-width: 375px) {
+  .modal {
+    width: 350px;
+    left: calc(50vw - 175px);
+    top: calc(50vh - 175px);
+    border: 1px solid #000000;
+    border-radius: 16px;
+  }
+}
