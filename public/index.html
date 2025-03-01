@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="app.css">
+    <title>Lista de Contactos</title>
+    <link rel="stylesheet" href="../public/app.css">
 </head>
 <body>
-    <main id="page">
-    </main>
-    <script src="cod.js"></script>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Contactos</h2>
+            <ul>
+                <li><span class="icon">👤</span> Personas</li>
+                <li><span class="icon">🏢</span> Empresas</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Lista de Contactos <span id="contact-type">Personas</span></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nombre</th>
+                        <th>Teléfonos</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pepe</td>
+                        <td>123654-65224</td>
+                        <td>pepe@test.com</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pepe</td>
+                        <td>123654-65222</td>
+                        <td>pepe@test.com</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
 </body>
 </html>
