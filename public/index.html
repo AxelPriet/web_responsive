@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Contactos</title>
-    <link rel="stylesheet" href="../public/app.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <div class="container">
         <aside class="sidebar">
             <h2>Contactos</h2>
             <ul>
-                <li><span class="icon">👤</span> Personas</li>
-                <li><span class="icon">🏢</span> Empresas</li>
+                <li id="btn-personas"><span class="icon">👤</span> Personas</li>
+                <li id="btn-empresas"><span class="icon">🏢</span> Empresas</li>
             </ul>
         </aside>
         <main class="content">
-            <h2>Lista de Contactos <span id="contact-type">Personas</span></h2>
-            <table>
+            <h2 id="contact-title">Lista de Contactos Personas</h2>
+
+            <!-- Tabla de Personas -->
+            <table id="tabla-personas">
                 <thead>
                     <tr>
                         <th>No</th>
@@ -30,9 +32,9 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Pepe</td>
-                        <td>123654-65224</td>
-                        <td>pepe@test.com</td>
+                        <td>Lorena</td>
+                        <td>3125894466</td>
+                        <td>Lore@gmail.com</td>
                         <td>
                             <button class="edit">✏️</button>
                             <button class="delete">🗑️</button>
@@ -40,9 +42,44 @@
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Pepe</td>
-                        <td>123654-65222</td>
-                        <td>pepe@test.com</td>
+                        <td>Maria</td>
+                        <td>3245844426</td>
+                        <td>maria@gmail.com</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Tabla de Empresas -->
+            <table id="tabla-empresas" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Empresa</th>
+                        <th>Teléfonos</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Claro</td>
+                        <td>555-12345</td>
+                        <td>clarored@gmail.com</td>
+                        <td>
+                            <button class="edit">✏️</button>
+                            <button class="delete">🗑️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>movistar</td>
+                        <td>555-67890</td>
+                        <td>movistarred@gmail.com</td>
                         <td>
                             <button class="edit">✏️</button>
                             <button class="delete">🗑️</button>
@@ -52,5 +89,6 @@
             </table>
         </main>
     </div>
+    <script src="botones.js"></script>
 </body>
 </html>
