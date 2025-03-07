@@ -18,50 +18,84 @@
         <main class="content">
             <h2 id="contact-title">Lista de Contactos Personas</h2>
 
-            <!-- Tabla de Personas -->
-            <table id="tabla-personas">
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." />
+            </div>
+
+            <!-- Lista de contactos Personas (Vista móvil) -->
+            <div id="lista-personas" class="contact-list">
+                <details class="contact-item">
+                    <summary>Pepe Pepe</summary>
+                    <div class="contact-info">
+                        <p>Tel: 311 253 0000</p>
+                        <p>Email: pepe.pepe@test.com</p>
+                        <p>Tel 2: 322 000 0000</p>
+                    </div>
+                </details>
+
+                <details class="contact-item">
+                    <summary>Lorena</summary>
+                    <div class="contact-info">
+                        <p>Tel: 3125894466</p>
+                        <p>Email: Lore@gmail.com</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Tabla de contactos Personas (Vista tablet/escritorio) -->
+            <table id="tabla-personas" class="contact-table">
                 <thead>
                     <tr>
                         <th>No</th>
                         <th>Nombre</th>
                         <th>Teléfonos</th>
                         <th>Email</th>
-                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Lorena</td>
-                        <td>3125894466</td>
-                        <td>Lore@gmail.com</td>
-                        <td>
-                            <button class="edit">✏️</button>
-                            <button class="delete">🗑️</button>
-                        </td>
+                        <td>Pepe</td>
+                        <td>1236544 - 63222</td>
+                        <td>pepe@test.cc</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Maria</td>
-                        <td>3245844426</td>
-                        <td>maria@gmail.com</td>
-                        <td>
-                            <button class="edit">✏️</button>
-                            <button class="delete">🗑️</button>
-                        </td>
+                        <td>Pepe</td>
+                        <td>1236544 - 63222</td>
+                        <td>pepe@test.cc</td>
                     </tr>
                 </tbody>
             </table>
 
-            <!-- Tabla de Empresas -->
-            <table id="tabla-empresas" style="display: none;">
+            <!-- Lista de contactos Empresas (Vista móvil) -->
+            <div id="lista-empresas" class="contact-list" style="display: none;">
+                <details class="contact-item">
+                    <summary>Claro</summary>
+                    <div class="contact-info">
+                        <p>Tel: 555-12345</p>
+                        <p>Email: clarored@gmail.com</p>
+                    </div>
+                </details>
+
+                <details class="contact-item">
+                    <summary>Movistar</summary>
+                    <div class="contact-info">
+                        <p>Tel: 555-67890</p>
+                        <p>Email: movistarred@gmail.com</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Tabla de contactos Empresas (Vista tablet/escritorio) -->
+            <table id="tabla-empresas" class="contact-table" style="display: none;">
                 <thead>
                     <tr>
                         <th>No</th>
                         <th>Empresa</th>
                         <th>Teléfonos</th>
                         <th>Email</th>
-                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,20 +104,12 @@
                         <td>Claro</td>
                         <td>555-12345</td>
                         <td>clarored@gmail.com</td>
-                        <td>
-                            <button class="edit">✏️</button>
-                            <button class="delete">🗑️</button>
-                        </td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>movistar</td>
+                        <td>Movistar</td>
                         <td>555-67890</td>
                         <td>movistarred@gmail.com</td>
-                        <td>
-                            <button class="edit">✏️</button>
-                            <button class="delete">🗑️</button>
-                        </td>
                     </tr>
                 </tbody>
             </table>
